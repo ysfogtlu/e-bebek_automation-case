@@ -3,7 +3,6 @@ const { expect } = require('@playwright/test');
 class LoginPage {
   constructor(page) {
     this.page = page;
-    // Daha spesifik locator
     this.loginButton = page.locator('a[href="/login"]').first();
     this.emailInput = page.locator('#Email');
     this.passwordInput = page.locator('#Password');
@@ -26,7 +25,7 @@ class LoginPage {
   }
 
   async clickEmailTab() {
-  await this.page.locator('#btnLoginWithEmail').click(); // Doğrudan ID ile
+  await this.page.locator('#btnLoginWithEmail').click();
 }
 
 async enterEmail(email) {
