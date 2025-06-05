@@ -2,9 +2,13 @@ name: Run Playwright Cucumber Tests
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
+  schedule:
+    - cron: '0 6 * * *'
 
 jobs:
   test:
