@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+
+# Allure raporu klasörü
+allure-report/
+
+# Playwright test sonuçları, raporları
+test-results/

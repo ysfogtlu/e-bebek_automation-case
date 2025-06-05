@@ -1,0 +1,28 @@
+{
+  "name": "automation_ebebek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require tests/cucumber-playwright-runner.js --require step_definitions/ --require features/support/ --format json:./reports/cucumber-report.json",
+    "report": "allure generate ./reports/allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.52.0",
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "@wdio/allure-reporter": "^9.15.0",
+    "allure-commandline": "^2.34.0",
+    "allure-cucumberjs": "^3.2.2",
+    "allure-js-commons": "^3.2.2",
+    "allure-playwright": "^3.2.2",
+    "playwright": "^1.52.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
