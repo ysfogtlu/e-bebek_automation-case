@@ -13,6 +13,8 @@ Testlerde modüler yapı için Page Object Pattern ve yeniden kullanılabilir ha
 
 ---
 
+Testleri çalıştırabilmek için lütfen .env dosyasındaki gerekli alanlara e-bebek account bilgilerinizi girin.
+
 ## Proje Yapısı
 - `features/` : Cucumber senaryoları (`.feature` dosyaları)  
 - `step_definitions/` : Step implementation dosyaları  
